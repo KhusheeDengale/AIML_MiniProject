@@ -27,15 +27,15 @@
 **UI Insight** is a full-stack AI/ML web application that provides automated, evidence-based website design analysis by combining computer vision, unsupervised clustering, and supervised regression within a unified analysis pipeline.
 
 Users can either **explore category-specific design benchmarks** or **upload a website screenshot** to receive:
-- 🔥 **Visual attention heatmaps** predicting where users look first
-- 🧠 **Cognitive complexity scoring** estimating reading & visual effort
-- 📊 **Layout archetype classification** identifying structural patterns
-- 💡 **Prioritised design recommendations** backed by measurable evidence
-- 📄 **Downloadable PDF reports** for professional documentation
+-  **Visual attention heatmaps** predicting where users look first
+-  **Cognitive complexity scoring** estimating reading & visual effort
+-  **Layout archetype classification** identifying structural patterns
+-  **Prioritised design recommendations** backed by measurable evidence
+-  **Downloadable PDF reports** for professional documentation
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 | Feature | Description |
 |---|---|
@@ -280,5 +280,5 @@ This project was developed as an **AI/ML Mini Project** for the academic year 20
 ---
 
 <p align="center">
-  <b>Built with ❤️ using Python, React, OpenCV & scikit-learn</b>
+  <b>Built with  using Python, React, OpenCV & scikit-learn</b>
 </p>
