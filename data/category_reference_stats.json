@@ -1,0 +1,292 @@
+{
+  "dataset_summary": {
+    "total_screenshots": 105,
+    "education_count": 55,
+    "product_count": 50
+  },
+  "categories": {
+    "Education": {
+      "count": 55,
+      "means": {
+        "pct_top_left": 26.41,
+        "pct_top_right": 22.02,
+        "pct_bottom_left": 26.93,
+        "pct_bottom_right": 24.63,
+        "pct_top": 48.43,
+        "pct_bottom": 51.57,
+        "pct_left": 53.35,
+        "pct_right": 46.65,
+        "saliency_concentration_gini": 0.51
+      },
+      "medians": {
+        "pct_top_left": 26.38,
+        "pct_top_right": 21.7,
+        "pct_bottom_left": 26.8,
+        "pct_bottom_right": 24.98,
+        "pct_top": 48.81,
+        "pct_bottom": 51.19,
+        "pct_left": 52.8,
+        "pct_right": 47.2,
+        "saliency_concentration_gini": 0.51
+      },
+      "stds": {
+        "pct_top_left": 7.32,
+        "pct_top_right": 6.11,
+        "pct_bottom_left": 8.27,
+        "pct_bottom_right": 7.29,
+        "pct_top": 10.42,
+        "pct_bottom": 10.42,
+        "pct_left": 7.63,
+        "pct_right": 7.63,
+        "saliency_concentration_gini": 0.1
+      },
+      "q25": {
+        "pct_top_left": 21.66,
+        "pct_top_right": 18.66,
+        "pct_bottom_left": 21.47,
+        "pct_bottom_right": 19.62,
+        "pct_top": 41.57,
+        "pct_bottom": 45.87,
+        "pct_left": 48.98,
+        "pct_right": 41.05,
+        "saliency_concentration_gini": 0.47
+      },
+      "q75": {
+        "pct_top_left": 30.46,
+        "pct_top_right": 27.05,
+        "pct_bottom_left": 31.75,
+        "pct_bottom_right": 29.21,
+        "pct_top": 54.13,
+        "pct_bottom": 58.43,
+        "pct_left": 58.95,
+        "pct_right": 51.02,
+        "saliency_concentration_gini": 0.56
+      },
+      "dominant_quadrant_distribution": {
+        "bottom_left": 21,
+        "top_left": 16,
+        "bottom_right": 13,
+        "top_right": 5
+      },
+      "cluster_profile_distribution": {
+        "Balanced / Distributed Layout (Multi-Focal)": 24,
+        "Top-Left Focal (Header & Branding Dominant)": 19,
+        "Bottom-Left Focal (Content Grid Dominant)": 12
+      },
+      "complexity_benchmarks": {
+        "count": 55,
+        "complexity_score": {
+          "mean": 38.49,
+          "median": 36.76,
+          "std": 13.42,
+          "min": 13.62,
+          "max": 79.95,
+          "distribution": {
+            "low_pct": 30.9,
+            "moderate_pct": 63.6,
+            "high_pct": 5.5
+          }
+        },
+        "text_density": {
+          "mean": 0.159,
+          "mean_pct": 15.9,
+          "median_pct": 14.28,
+          "std_pct": 8.15
+        },
+        "whitespace_ratio": {
+          "mean": 0.2447,
+          "mean_pct": 24.47,
+          "median_pct": 20.0,
+          "std_pct": 15.52
+        },
+        "edge_density": {
+          "mean": 0.0459,
+          "mean_pct": 4.59,
+          "median_pct": 4.41,
+          "std_pct": 1.89
+        },
+        "word_count": {
+          "mean": 355.3,
+          "median": 325.0
+        },
+        "text_block_count": {
+          "mean": 71.1,
+          "median": 65.0
+        },
+        "contrast": {
+          "mean": 74.38,
+          "median": 78.3
+        },
+        "brightness": {
+          "mean": 158.71,
+          "median": 172.15
+        }
+      }
+    },
+    "Product": {
+      "count": 50,
+      "means": {
+        "pct_top_left": 24.25,
+        "pct_top_right": 23.22,
+        "pct_bottom_left": 26.22,
+        "pct_bottom_right": 26.3,
+        "pct_top": 47.47,
+        "pct_bottom": 52.53,
+        "pct_left": 50.48,
+        "pct_right": 49.52,
+        "saliency_concentration_gini": 0.43
+      },
+      "medians": {
+        "pct_top_left": 23.96,
+        "pct_top_right": 24.07,
+        "pct_bottom_left": 25.0,
+        "pct_bottom_right": 25.45,
+        "pct_top": 47.71,
+        "pct_bottom": 52.29,
+        "pct_left": 50.46,
+        "pct_right": 49.54,
+        "saliency_concentration_gini": 0.43
+      },
+      "stds": {
+        "pct_top_left": 5.63,
+        "pct_top_right": 5.19,
+        "pct_bottom_left": 6.03,
+        "pct_bottom_right": 5.6,
+        "pct_top": 8.14,
+        "pct_bottom": 8.14,
+        "pct_left": 5.85,
+        "pct_right": 5.85,
+        "saliency_concentration_gini": 0.12
+      },
+      "q25": {
+        "pct_top_left": 20.57,
+        "pct_top_right": 20.43,
+        "pct_bottom_left": 22.82,
+        "pct_bottom_right": 22.22,
+        "pct_top": 41.57,
+        "pct_bottom": 48.0,
+        "pct_left": 46.76,
+        "pct_right": 44.95,
+        "saliency_concentration_gini": 0.37
+      },
+      "q75": {
+        "pct_top_left": 27.94,
+        "pct_top_right": 26.85,
+        "pct_bottom_left": 29.5,
+        "pct_bottom_right": 29.88,
+        "pct_top": 52.0,
+        "pct_bottom": 58.43,
+        "pct_left": 55.05,
+        "pct_right": 53.24,
+        "saliency_concentration_gini": 0.5
+      },
+      "dominant_quadrant_distribution": {
+        "bottom_right": 16,
+        "top_left": 12,
+        "top_right": 11,
+        "bottom_left": 11
+      },
+      "cluster_profile_distribution": {
+        "Balanced / Distributed Layout (Multi-Focal)": 25,
+        "Top-Left Focal (Header & Branding Dominant)": 13,
+        "Bottom-Left Focal (Content Grid Dominant)": 12
+      },
+      "complexity_benchmarks": {
+        "count": 50,
+        "complexity_score": {
+          "mean": 39.59,
+          "median": 39.05,
+          "std": 14.31,
+          "min": 19.41,
+          "max": 100.0,
+          "distribution": {
+            "low_pct": 24.0,
+            "moderate_pct": 70.0,
+            "high_pct": 6.0
+          }
+        },
+        "text_density": {
+          "mean": 0.1478,
+          "mean_pct": 14.78,
+          "median_pct": 14.79,
+          "std_pct": 8.81
+        },
+        "whitespace_ratio": {
+          "mean": 0.2134,
+          "mean_pct": 21.34,
+          "median_pct": 18.0,
+          "std_pct": 15.06
+        },
+        "edge_density": {
+          "mean": 0.0477,
+          "mean_pct": 4.77,
+          "median_pct": 4.33,
+          "std_pct": 2.08
+        },
+        "word_count": {
+          "mean": 344.8,
+          "median": 312.5
+        },
+        "text_block_count": {
+          "mean": 69.0,
+          "median": 62.5
+        },
+        "contrast": {
+          "mean": 68.35,
+          "median": 71.28
+        },
+        "brightness": {
+          "mean": 191.22,
+          "median": 194.24
+        }
+      }
+    },
+    "Overall": {
+      "count": 105,
+      "means": {
+        "pct_top_left": 25.38,
+        "pct_top_right": 22.59,
+        "pct_bottom_left": 26.6,
+        "pct_bottom_right": 25.43,
+        "pct_top": 47.98,
+        "pct_bottom": 52.02,
+        "pct_left": 51.98,
+        "pct_right": 48.02,
+        "saliency_concentration_gini": 0.47
+      },
+      "medians": {
+        "pct_top_left": 24.8,
+        "pct_top_right": 22.59,
+        "pct_bottom_left": 25.44,
+        "pct_bottom_right": 25.45,
+        "pct_top": 47.89,
+        "pct_bottom": 52.11,
+        "pct_left": 51.35,
+        "pct_right": 48.65,
+        "saliency_concentration_gini": 0.48
+      },
+      "stds": {
+        "pct_top_left": 6.63,
+        "pct_top_right": 5.7,
+        "pct_bottom_left": 7.26,
+        "pct_bottom_right": 6.56,
+        "pct_top": 9.37,
+        "pct_bottom": 9.37,
+        "pct_left": 6.96,
+        "pct_right": 6.96,
+        "saliency_concentration_gini": 0.12
+      },
+      "dominant_quadrant_distribution": {
+        "bottom_left": 32,
+        "bottom_right": 29,
+        "top_left": 28,
+        "top_right": 16
+      },
+      "cluster_profile_distribution": {
+        "Balanced / Distributed Layout (Multi-Focal)": 49,
+        "Top-Left Focal (Header & Branding Dominant)": 32,
+        "Bottom-Left Focal (Content Grid Dominant)": 24
+      }
+    }
+  }
+}

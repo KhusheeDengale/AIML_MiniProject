@@ -1,0 +1,73 @@
+{
+  "model_type": "RandomForestRegressor",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 4,
+    "random_state": 42
+  },
+  "metrics": {
+    "mae": 2.07,
+    "rmse": 2.82,
+    "r2": 0.9411
+  },
+  "feature_columns": [
+    "word_count",
+    "text_block_count",
+    "text_density",
+    "text_block_density",
+    "brightness",
+    "contrast",
+    "edge_density",
+    "whitespace_ratio"
+  ],
+  "feature_importances": {
+    "text_density": 0.3367,
+    "edge_density": 0.295,
+    "text_block_density": 0.1751,
+    "whitespace_ratio": 0.0603,
+    "word_count": 0.0597,
+    "text_block_count": 0.0557,
+    "contrast": 0.009,
+    "brightness": 0.0085
+  },
+  "normalization_ranges": {
+    "word_count": {
+      "min": 0.0,
+      "max": 1060.0
+    },
+    "text_block_count": {
+      "min": 0.0,
+      "max": 212.0
+    },
+    "text_density": {
+      "min": 0.0,
+      "max": 0.5062
+    },
+    "text_block_density": {
+      "min": 0.0,
+      "max": 219.99
+    },
+    "brightness": {
+      "min": 39.7648,
+      "max": 248.6459
+    },
+    "contrast": {
+      "min": 28.207,
+      "max": 110.0318
+    },
+    "edge_density": {
+      "min": 0.0135,
+      "max": 0.1164
+    },
+    "whitespace_ratio": {
+      "min": 0.0,
+      "max": 0.59
+    }
+  },
+  "formula_weights": {
+    "text_density": 0.35,
+    "edge_density": 0.25,
+    "text_block_density": 0.2,
+    "inverse_whitespace": 0.2
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "k": 3,
+  "silhouette_score": 0.2716,
+  "inertia": 9188.33,
+  "feature_columns": [
+    "pct_top_left",
+    "pct_top_right",
+    "pct_bottom_left",
+    "pct_bottom_right"
+  ],
+  "profiles": {
+    "0": {
+      "cluster_id": 0,
+      "profile_name": "Balanced / Distributed Layout (Multi-Focal)",
+      "centroid_percentages": {
+        "top_left": 23.3,
+        "top_right": 23.72,
+        "bottom_left": 23.89,
+        "bottom_right": 29.08
+      },
+      "top_ratio": 47.02,
+      "bottom_ratio": 52.98,
+      "left_ratio": 47.19,
+      "right_ratio": 52.81,
+      "sample_count": 49
+    },
+    "1": {
+      "cluster_id": 1,
+      "profile_name": "Top-Left Focal (Header & Branding Dominant)",
+      "centroid_percentages": {
+        "top_left": 32.44,
+        "top_right": 25.43,
+        "bottom_left": 23.58,
+        "bottom_right": 18.55
+      },
+      "top_ratio": 57.87,
+      "bottom_ratio": 42.13,
+      "left_ratio": 56.02,
+      "right_ratio": 43.98,
+      "sample_count": 32
+    },
+    "2": {
+      "cluster_id": 2,
+      "profile_name": "Bottom-Left Focal (Content Grid Dominant)",
+      "centroid_percentages": {
+        "top_left": 20.24,
+        "top_right": 16.49,
+        "bottom_left": 36.14,
+        "bottom_right": 27.13
+      },
+      "top_ratio": 36.73,
+      "bottom_ratio": 63.27,
+      "left_ratio": 56.38,
+      "right_ratio": 43.62,
+      "sample_count": 24
+    }
+  },
+  "selection_comparison": {
+    "2": {
+      "silhouette": 0.2787,
+      "inertia": 12202.54,
+      "cluster_counts": {
+        "0": 54,
+        "1": 51
+      }
+    },
+    "3": {
+      "silhouette": 0.2716,
+      "inertia": 9188.33,
+      "cluster_counts": {
+        "0": 49,
+        "1": 32,
+        "2": 24
+      }
+    },
+    "4": {
+      "silhouette": 0.266,
+      "inertia": 7638.92,
+      "cluster_counts": {
+        "1": 40,
+        "0": 32,
+        "3": 26,
+        "2": 7
+      }
+    },
+    "5": {
+      "silhouette": 0.2738,
+      "inertia": 6516.91,
+      "cluster_counts": {
+        "2": 40,
+        "1": 26,
+        "0": 22,
+        "4": 10,
+        "3": 7
+      }
+    }
+  }
+}

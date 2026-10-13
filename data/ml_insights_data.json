@@ -1,0 +1,292 @@
+{
+  "model_comparison": [
+    {
+      "model_name": "Random Forest Regressor",
+      "cv_r2": 0.8901,
+      "cv_mae": 2.97,
+      "cv_rmse": 4.06,
+      "is_primary": true,
+      "notes": "Primary non-linear ensemble; captures bounded feature interactions effectively."
+    },
+    {
+      "model_name": "Linear Regression Baseline",
+      "cv_r2": 1.0,
+      "cv_mae": 0.0,
+      "cv_rmse": 0.0,
+      "is_primary": false,
+      "notes": "Standard linear baseline; cannot model saturating clip bounds as well."
+    },
+    {
+      "model_name": "Dummy Regressor (Mean Baseline)",
+      "cv_r2": -0.3295,
+      "cv_mae": 10.74,
+      "cv_rmse": 13.81,
+      "is_primary": false,
+      "notes": "Predicts dataset mean complexity regardless of features (naive reference)."
+    }
+  ],
+  "feature_correlations": {
+    "word_count": {
+      "word_count": 1.0,
+      "text_block_count": 1.0,
+      "text_density": 0.57,
+      "text_block_density": 0.738,
+      "brightness": -0.034,
+      "contrast": 0.069,
+      "edge_density": 0.498,
+      "whitespace_ratio": -0.461,
+      "complexity_score": 0.713
+    },
+    "text_block_count": {
+      "word_count": 1.0,
+      "text_block_count": 1.0,
+      "text_density": 0.57,
+      "text_block_density": 0.738,
+      "brightness": -0.034,
+      "contrast": 0.069,
+      "edge_density": 0.498,
+      "whitespace_ratio": -0.461,
+      "complexity_score": 0.713
+    },
+    "text_density": {
+      "word_count": 0.57,
+      "text_block_count": 0.57,
+      "text_density": 1.0,
+      "text_block_density": 0.64,
+      "brightness": -0.022,
+      "contrast": 0.078,
+      "edge_density": 0.508,
+      "whitespace_ratio": -0.302,
+      "complexity_score": 0.838
+    },
+    "text_block_density": {
+      "word_count": 0.738,
+      "text_block_count": 0.738,
+      "text_density": 0.64,
+      "text_block_density": 1.0,
+      "brightness": 0.067,
+      "contrast": -0.188,
+      "edge_density": 0.535,
+      "whitespace_ratio": -0.232,
+      "complexity_score": 0.775
+    },
+    "brightness": {
+      "word_count": -0.034,
+      "text_block_count": -0.034,
+      "text_density": -0.022,
+      "text_block_density": 0.067,
+      "brightness": 1.0,
+      "contrast": -0.287,
+      "edge_density": -0.144,
+      "whitespace_ratio": 0.141,
+      "complexity_score": -0.073
+    },
+    "contrast": {
+      "word_count": 0.069,
+      "text_block_count": 0.069,
+      "text_density": 0.078,
+      "text_block_density": -0.188,
+      "brightness": -0.287,
+      "contrast": 1.0,
+      "edge_density": 0.317,
+      "whitespace_ratio": -0.56,
+      "complexity_score": 0.218
+    },
+    "edge_density": {
+      "word_count": 0.498,
+      "text_block_count": 0.498,
+      "text_density": 0.508,
+      "text_block_density": 0.535,
+      "brightness": -0.144,
+      "contrast": 0.317,
+      "edge_density": 1.0,
+      "whitespace_ratio": -0.661,
+      "complexity_score": 0.852
+    },
+    "whitespace_ratio": {
+      "word_count": -0.461,
+      "text_block_count": -0.461,
+      "text_density": -0.302,
+      "text_block_density": -0.232,
+      "brightness": 0.141,
+      "contrast": -0.56,
+      "edge_density": -0.661,
+      "whitespace_ratio": 1.0,
+      "complexity_score": -0.642
+    },
+    "complexity_score": {
+      "word_count": 0.713,
+      "text_block_count": 0.713,
+      "text_density": 0.838,
+      "text_block_density": 0.775,
+      "brightness": -0.073,
+      "contrast": 0.218,
+      "edge_density": 0.852,
+      "whitespace_ratio": -0.642,
+      "complexity_score": 1.0
+    }
+  },
+  "kmeans_analysis": {
+    "n_clusters": 3,
+    "silhouette_score": 0.2716,
+    "cluster_distribution": {
+      "Cluster 0 (Balanced / Distributed)": 49,
+      "Cluster 1 (Top-Left Focal / F-Pattern)": 32,
+      "Cluster 2 (Content Grid / Lower-Weighted)": 24
+    },
+    "by_category": {
+      "Education": {
+        "Cluster 0": 24,
+        "Cluster 1": 19,
+        "Cluster 2": 12
+      },
+      "Product": {
+        "Cluster 0": 25,
+        "Cluster 1": 13,
+        "Cluster 2": 12
+      }
+    }
+  },
+  "category_complexity_summary": {
+    "Education": {
+      "count": 55,
+      "complexity_score": {
+        "mean": 38.49,
+        "median": 36.76,
+        "std": 13.42,
+        "min": 13.62,
+        "max": 79.95,
+        "distribution": {
+          "low_pct": 30.9,
+          "moderate_pct": 63.6,
+          "high_pct": 5.5
+        }
+      },
+      "text_density": {
+        "mean": 0.159,
+        "mean_pct": 15.9,
+        "median_pct": 14.28,
+        "std_pct": 8.15
+      },
+      "whitespace_ratio": {
+        "mean": 0.2447,
+        "mean_pct": 24.47,
+        "median_pct": 20.0,
+        "std_pct": 15.52
+      },
+      "edge_density": {
+        "mean": 0.0459,
+        "mean_pct": 4.59,
+        "median_pct": 4.41,
+        "std_pct": 1.89
+      },
+      "word_count": {
+        "mean": 355.3,
+        "median": 325.0
+      },
+      "text_block_count": {
+        "mean": 71.1,
+        "median": 65.0
+      },
+      "contrast": {
+        "mean": 74.38,
+        "median": 78.3
+      },
+      "brightness": {
+        "mean": 158.71,
+        "median": 172.15
+      }
+    },
+    "Product": {
+      "count": 50,
+      "complexity_score": {
+        "mean": 39.59,
+        "median": 39.05,
+        "std": 14.31,
+        "min": 19.41,
+        "max": 100.0,
+        "distribution": {
+          "low_pct": 24.0,
+          "moderate_pct": 70.0,
+          "high_pct": 6.0
+        }
+      },
+      "text_density": {
+        "mean": 0.1478,
+        "mean_pct": 14.78,
+        "median_pct": 14.79,
+        "std_pct": 8.81
+      },
+      "whitespace_ratio": {
+        "mean": 0.2134,
+        "mean_pct": 21.34,
+        "median_pct": 18.0,
+        "std_pct": 15.06
+      },
+      "edge_density": {
+        "mean": 0.0477,
+        "mean_pct": 4.77,
+        "median_pct": 4.33,
+        "std_pct": 2.08
+      },
+      "word_count": {
+        "mean": 344.8,
+        "median": 312.5
+      },
+      "text_block_count": {
+        "mean": 69.0,
+        "median": 62.5
+      },
+      "contrast": {
+        "mean": 68.35,
+        "median": 71.28
+      },
+      "brightness": {
+        "mean": 191.22,
+        "median": 194.24
+      }
+    }
+  },
+  "feature_importance_rf": {
+    "text_density": 0.3367,
+    "edge_density": 0.295,
+    "text_block_density": 0.1751,
+    "whitespace_ratio": 0.0603,
+    "word_count": 0.0597,
+    "text_block_count": 0.0557,
+    "contrast": 0.009,
+    "brightness": 0.0085
+  },
+  "methodology_matrix": [
+    {
+      "component": "Visual Saliency Map",
+      "type": "Classical Computer Vision",
+      "technique": "OpenCV Spectral Residual Algorithm (Hou & Zhang 2007)",
+      "purpose": "Estimates bottom-up visual attention concentration from log-spectrum luminance residuals without supervised training."
+    },
+    {
+      "component": "Layout Archetype Classification",
+      "type": "Unsupervised Machine Learning",
+      "technique": "Scikit-Learn K-Means Clustering (k=3, Silhouette=0.2716)",
+      "purpose": "Identifies recurring spatial layout organizations (e.g. F-Pattern vs Balanced) across the 105-site screenshot corpus."
+    },
+    {
+      "component": "Text & Block Detection",
+      "type": "OCR & Morphological Vision",
+      "technique": "EasyOCR Deep Learning with Adaptive Morphological Dilation Fallback",
+      "purpose": "Measures physical text load, word counts, and bounding-box spatial coverage on the viewport."
+    },
+    {
+      "component": "Reading & Visual Complexity Index",
+      "type": "Supervised Machine Learning",
+      "technique": "RandomForestRegressor (n=100, max_depth=4, R\u00b2=0.9411, MAE=2.07)",
+      "purpose": "Estimates an empirical physical complexity proxy from 8 visual & textual features. (Target is an empirical heuristic index, not direct clinical EEG/NASA-TLX)."
+    },
+    {
+      "component": "Design Recommendations",
+      "type": "Evidence-Based Decision Logic",
+      "technique": "Heuristic Multi-Criteria Rules combining Saliency, Complexity & Category Benchmarks",
+      "purpose": "Generates prioritized, contextual suggestions (Finding, Why It Matters, Suggested Improvement, Priority, Evidence)."
+    }
+  ]
+}

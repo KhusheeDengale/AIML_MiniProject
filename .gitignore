@@ -1,0 +1,88 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+.vite/
+*.tsbuildinfo
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Large Dataset Images (95 MB+)
+# Push a few samples only via assets/
+# ========================
+images/
+
+# ========================
+# Generated Runtime Outputs
+# (These are re-generated on each run)
+# ========================
+output_opencv/
+output_inference/
+uploads/
+reports/
+
+# ========================
+# Zip Archives (large binaries)
+# ========================
+*.zip
+
+# ========================
+# Backup / Scratch Directories
+# ========================
+_backup_baseline_saliency/
+_teammate_repo/
+
+# ========================
+# Jupyter Notebook Checkpoints
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Internal Planning / Scratch
+# ========================
+UI_Insight_Alternative_Implementation_Plan.md
+inspect_final_nb.py
+cognitive.ipynb
+
+# ========================
+# Gemini / Antigravity IDE
+# ========================
+.gemini/
+.agents/
