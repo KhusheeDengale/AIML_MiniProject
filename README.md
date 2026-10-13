@@ -118,12 +118,12 @@ Users can either **explore category-specific design benchmarks** or **upload a w
 ### Installation
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/UI-Insight.git
-cd UI-Insight
+# 1. Clone the repository (or download & extract ZIP)
+git clone https://github.com/KhusheeDengale/AIML_MiniProject.git
+cd AIML_MiniProject
 
 # 2. Install Python dependencies
-pip install fastapi uvicorn opencv-contrib-python scikit-learn pandas numpy joblib pillow reportlab
+pip install -r requirements.txt
 
 # 3. Install frontend dependencies
 cd frontend
